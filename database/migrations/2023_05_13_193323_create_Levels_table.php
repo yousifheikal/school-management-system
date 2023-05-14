@@ -9,9 +9,10 @@ class CreateLevelsTable extends Migration {
 	{
 		Schema::create('Levels', function(Blueprint $table) {
 			$table->increments('id');
+            $table->string('Level_Name')->unique();
+            $table->text('Notes')->nullable();
 			$table->timestamps();
-			$table->string('Level_Name', 30);
-			$table->text('Notes');
+
 		});
 	}
 
