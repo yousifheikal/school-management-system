@@ -3,6 +3,7 @@
 use App\Http\Controllers\Classrooms\ClassroomController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Sections\SectionController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -47,6 +48,11 @@ Route::group(
     Route::resource('classrooms',  ClassroomController::class);
     Route::delete('delete_selected', [ClassroomController::class, 'delete_selected'])->name('delete_selected');
     Route::post('filter_classes', [ClassroomController::class, 'filter'])->name('filter');
+
+    /**** ROUTE FOR SectionController ****/
+    Route::resource('Sections', SectionController::class);
+    //get data of classes with Ajax
+    Route::get('/classes/{id}', [SectionController::class, 'getClasses']) ;
 
 
     Route::middleware('auth')->group(function () {

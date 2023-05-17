@@ -248,7 +248,7 @@
 
                                                         <div class="col">
                                                             <label for="Name"
-                                                                   class="mr-sm-2">{{ trans('classses.Name_class') }}
+                                                                   class="mr-sm-2">{{ trans('classes.Name_class') }}
                                                                 :</label>
                                                             <input class="form-control" type="text" name="Name"  required/>
                                                         </div>

@@ -16,6 +16,7 @@ class Level extends Model
         ];
 
     protected $table = 'Levels';
+
     protected $fillable = [
       'Level_Name',
       'Notes',
@@ -26,6 +27,11 @@ class Level extends Model
 
     public function classroom()
     {
-        return $this->hasOne(Classroom::class, 'level_id');
+        return $this->hasMany(Classroom::class, 'level_id');
+    }
+
+    public function Sections()
+    {
+        return $this->hasMany(Section::class, 'Level_id');
     }
 }
