@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Classrooms\ClassroomController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -41,6 +42,11 @@ Route::group(
 
     /**** ROUTE FOR LevelController ****/
     Route::resource('levels', LevelController::class);
+
+    /**** ROUTE FOR ClassroomController ****/
+    Route::resource('classrooms',  ClassroomController::class);
+    Route::delete('delete_selected', [ClassroomController::class, 'delete_selected'])->name('delete_selected');
+    Route::post('filter_classes', [ClassroomController::class, 'filter'])->name('filter');
 
 
     Route::middleware('auth')->group(function () {

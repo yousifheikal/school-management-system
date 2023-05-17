@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Levels;
 
 use App\Http\Controllers\Controller;
 //use App\Http\Controllers\Response;
+use App\Models\Classroom;
 use App\Models\Level;
 use Illuminate\Http\Request;
 
@@ -33,6 +34,11 @@ class LevelController extends Controller
      */
     public function store(Request $request)
     {
+        /**** CHECK LEVEL-NAME UNIQUE OR NO ****/
+        if (Level::where('Level_Name->ar', $request->Name)->orWhere('Level_Name->en', $request->Name_en)->exists()){
+            return redirect()->back()->withErrors(trans('message.unique'));
+        }
+
         /**** USING TRY-CATCH FOR CATCH ANY ERROR AND DISPLAY MSG ERROR ****/
         try {
 
@@ -91,8 +97,10 @@ class LevelController extends Controller
             /**** VALIDATION FOR DATA COMING FORM ADD-LEVEL ****/
             $validate = $request->validate([
                 'Name' => 'required',
+                'Name_en' => 'required',
             ],[
                 'Name.required' => trans('validation.required'),
+                'Name_en.required' => trans('validation.required'),
             ]);
 
             /**** UPDATING DATA COMING FORM EDIT-LEVEL ****/
@@ -118,8 +126,19 @@ class LevelController extends Controller
      */
     public function destroy($id)
     {
-        $level = Level::destroy($id);
-        toastr()->success(trans('message.delete'));
-        return redirect()->route('levels.index');
+        /*** IF YOU COLUMN LEVEL IN RELATIONSHIP WITH CLASSROOM NOT DELETE ***/
+        $classroom = Classroom::where('level_id', $id)->pluck('level_id');
+
+        if ($classroom->count() == 0)
+        {
+            Level::destroy($id);
+            toastr()->success(trans('message.delete'));
+            return redirect()->route('levels.index');
+        }
+        else
+        {
+            toastr()->warning(trans('message.delete-error'));
+            return redirect()->back();
+        }
     }
 }

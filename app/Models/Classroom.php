@@ -6,26 +6,26 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
-class Level extends Model
+class Classroom extends Model
 {
     use HasFactory, HasTranslations;
 
     public $translatable = [
-        'Level_Name',
-        'Notes',
-        ];
-
-    protected $table = 'Levels';
-    protected $fillable = [
-      'Level_Name',
-      'Notes',
+        'classroom',
     ];
 
+    protected $table = 'classrooms';
+
+
+    protected $fillable = [
+        'classroom',
+        'level_id'
+    ];
 
     public $timestamps = true;
 
-    public function classroom()
+    public function levels()
     {
-        return $this->hasOne(Classroom::class, 'level_id');
+       return $this->belongsTo(Level::class, 'level_id');
     }
 }
