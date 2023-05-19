@@ -54,6 +54,8 @@ Route::group(
     //get data of classes with Ajax
     Route::get('/classes/{id}', [SectionController::class, 'getClasses']) ;
 
+    /**** ROUTE FOR live-wire Add-Parent  ****/
+    Route::view('add_parent', 'livewire.show_Form')->name('add_parent');
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

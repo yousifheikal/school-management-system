@@ -61,6 +61,21 @@
                         </ul>
                     </li>
 
+
+                    <!-- Parents-->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Parents-menu">
+                            <div class="pull-left"><i class="fas fa-user-tie"></i><span
+                                    class="right-nav-text">{{trans('main_sidebar.parents')}}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="Parents-menu" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route('add_parent')}}">{{trans('main_sidebar.List_Parents')}}</a> </li>
+
+                        </ul>
+                    </li>
+
                     <!-- menu item todo-->
                     <li>
                         <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo

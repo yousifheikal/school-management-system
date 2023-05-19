@@ -44,6 +44,11 @@ return [
             'throw' => false,
         ],
 
+        'parent_attachments' => [
+            'driver' => 'local',
+            'root' => public_path('/img/parent_attachments'),
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),

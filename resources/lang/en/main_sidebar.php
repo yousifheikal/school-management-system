@@ -10,4 +10,6 @@ return [
     'Processes' => 'Processes',
     'classroom' => 'Classrooms',
     'classes' => 'Classes',
+    'parents' => 'Parents',
+    'List_Parents'=>'List Of Parents',
 ];
