@@ -4,6 +4,7 @@ use App\Http\Controllers\Classrooms\ClassroomController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Sections\SectionController;
+use App\Http\Controllers\Teachers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -56,6 +57,9 @@ Route::group(
 
     /**** ROUTE FOR live-wire Add-Parent  ****/
     Route::view('add_parent', 'livewire.show_Form')->name('add_parent');
+
+    /**** ROUTE FOR Teachers  ****/
+        Route::resource('teachers', TeacherController::class);
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

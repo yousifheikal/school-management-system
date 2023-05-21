@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Classroom;
 use App\Models\Level;
 use App\Models\Section;
+use App\Models\Teacher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -19,7 +20,8 @@ class SectionController extends Controller
         //
         $Grades = Level::with(['Sections'])->get();
         $List_Grades = Level::all();
-        return view('pages.sections.sections', compact('Grades', 'List_Grades'));
+        $Teachers = Teacher::all();
+        return view('pages.sections.sections', compact('Grades', 'List_Grades', 'Teachers'));
     }
 
     /**
@@ -43,6 +45,8 @@ class SectionController extends Controller
             $section->Level_id = $request->Grade_id;
             $section->Class_id = $request->Class_id;
             $section->save();
+            // ADD to table teacher_sections attach(hold id section and id teacher input teacher_section table)
+            $section->teachers()->attach($request->teacher_id);
             toastr()->success(trans('message.success'));
             return redirect()->back();
 
@@ -91,6 +95,16 @@ class SectionController extends Controller
             {
                 $section->Status = 2;
             }
+
+            // update table teacher_section using sync
+            if (isset($request->teacher_id))
+            {
+                $section->teachers()->sync($request->teacher_id);
+            }
+            else{
+                $section->teachers()->sync(array());
+            }
+
             $section->save();
             toastr()->success(trans('message.update'));
             return redirect()->back();

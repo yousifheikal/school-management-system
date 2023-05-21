@@ -38,6 +38,7 @@ return [
     'Attachments' => 'المرفقات',
     'Processes' => 'العمليات',
     'update' => 'تعديل',
+    'submit' => 'حفظ',
 
 
 ];

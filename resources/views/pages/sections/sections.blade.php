@@ -202,19 +202,19 @@
                                                                                                 <label
                                                                                                     class="form-check-label"
                                                                                                     for="exampleCheck1">{{ trans('Sections_trans.Status') }}</label><br>
+                                                                                                    <br>
+                                                                                                <div class="col">
+                                                                                                    <label for="inputName" class="control-label">{{ trans('Sections_trans.Name_Teacher') }}</label>
+                                                                                                    <select multiple name="teacher_id[]" class="form-control" id="exampleFormControlSelect2">
+                                                                                                        @foreach($list_Sections->teachers as $teacher)
+                                                                                                            <option selected disabled value="{{$teacher['id']}}">{{$teacher['Name']}}</option>
+                                                                                                        @endforeach
 
-{{--                                                                                                <div class="col">--}}
-{{--                                                                                                    <label for="inputName" class="control-label">{{ trans('Sections_trans.Name_Teacher') }}</label>--}}
-{{--                                                                                                    <select multiple name="teacher_id[]" class="form-control" id="exampleFormControlSelect2">--}}
-{{--                                                                                                        @foreach($list_Sections->teachers as $teacher)--}}
-{{--                                                                                                            <option selected value="{{$teacher['id']}}">{{$teacher['Name']}}</option>--}}
-{{--                                                                                                        @endforeach--}}
-
-{{--                                                                                                        @foreach($teachers as $teacher)--}}
-{{--                                                                                                            <option value="{{$teacher->id}}">{{$teacher->Name}}</option>--}}
-{{--                                                                                                        @endforeach--}}
-{{--                                                                                                    </select>--}}
-{{--                                                                                                </div>--}}
+                                                                                                        @foreach($Teachers as $teacher)
+                                                                                                            <option value="{{$teacher->id}}">{{$teacher->Name}}</option>
+                                                                                                        @endforeach
+                                                                                                    </select>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                 <br>
@@ -306,7 +306,7 @@
                                 <div class="modal-body">
 
                                     <form action="{{ route('Sections.store') }}" method="POST">
-                                        {{ csrf_field() }}
+                                        @csrf
                                         <div class="row">
                                             <div class="col">
                                                 <input type="text" name="Name_Section_Ar" class="form-control"
@@ -346,14 +346,14 @@
                                             </select>
                                         </div><br>
 
-{{--                                        <div class="col">--}}
-{{--                                            <label for="inputName" class="control-label">{{ trans('Sections_trans.Name_Teacher') }}</label>--}}
-{{--                                            <select multiple name="teacher_id[]" class="form-control" id="exampleFormControlSelect2">--}}
-{{--                                                @foreach($teachers as $teacher)--}}
-{{--                                                    <option value="{{$teacher->id}}">{{$teacher->Name}}</option>--}}
-{{--                                                @endforeach--}}
-{{--                                            </select>--}}
-{{--                                        </div>--}}
+                                        <div class="col">
+                                            <label for="inputName" class="control-label">{{ trans('Sections_trans.Name_Teacher') }}</label>
+                                            <select multiple name="teacher_id[]" class="form-control" id="exampleFormControlSelect2">
+                                                @foreach($Teachers as $teacher)
+                                                    <option value="{{$teacher->id}}">{{$teacher->Name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
 
 
                                 </div>

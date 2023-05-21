@@ -36,5 +36,6 @@ return [
     'Attachments' => 'Attachments',
     'Processes' => 'Processes',
     'update' => 'Update',
+    'submit' => 'Submit'
 
 ];

@@ -30,5 +30,11 @@ class Section extends Model
         return $this->belongsTo(Classroom::class, 'Class_id');
     }
 
+    // علاقة ميني تو ميني مع جدول المدرسين والجدول المشترك بينهم teacher_section
+    public function teachers()
+    {
+        return $this->belongsToMany(Teacher::class, 'teacher_section');
+    }
+
 
 }
