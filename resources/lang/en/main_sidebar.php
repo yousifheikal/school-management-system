@@ -15,8 +15,8 @@ return [
     'Teachers'=>'Teachers',
     'List_Teachers' => 'List Of Teachers',
     'Dashboard_page'=>'Dashboard',
-    'Main_title' => 'MoraSoft School Management Program',
-    'Programname' => 'MoraSoft School Management Program',
+    'Main_title' => 'Goexes School Management Program',
+    'Programname' => 'Goexes School Management Program',
     'change_language'=>'language',
     'Grades'=>'Grades',
     'Grades_list'=>'Grades List',
@@ -38,6 +38,10 @@ return [
     'Settings'=>'Settings',
     'Users'=>'Users',
     'Copyright' => 'Copyright',
-    'Name_Programer' => 'SamirGamal MoraSoft All Rights Reserved'
+    'Name_Programer' => 'SamirGamal MoraSoft All Rights Reserved',
+     'list_student' => 'List Of Students',
+    'logout' => 'Logout',
+    'list_students'=>'list Students',
+    'Students_Promotions'=>'Students Promotions',
 
 ];

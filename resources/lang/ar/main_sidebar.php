@@ -36,4 +36,17 @@ return [
     'Settings'=>'الاعدادات',
     'Users'=>'المستخدمين',
     'Copyright' => 'جميع الحقوق محفوظة ',
+    'list_student' => 'قائمة الطلاب',
+    'logout' => 'تسجيل الخروج',
+    'Student_information'=>'معلومات الطلاب',
+    'list_students'=>'قائمة الطلاب',
+    'Students_Promotions'=>'ترقية الطلاب',
+    'add_Promotion'=>'اضافة ترقية جديدة',
+    'list_Promotions'=>'قائمة الترقيات',
+    'Graduate_students'=>'الطلاب المتخرجين',
+    'add_Graduate'=>'اضافة تخرج جديد',
+    'list_Graduate'=>'قائمة التخرجات',
+    'Name_Programer' => 'يوسف هيكل',
+
+
 ];

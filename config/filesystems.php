@@ -44,6 +44,16 @@ return [
             'throw' => false,
         ],
 
+        'upload_attachments' => [
+            'driver' => 'local',
+            'root' => public_path('/img/'),
+        ],
+
+        'student_attachments' => [
+            'driver' => 'local',
+            'root' => public_path('/img/student_attachment/'),
+        ],
+
         'parent_attachments' => [
             'driver' => 'local',
             'root' => public_path('/img/parent_attachments'),
