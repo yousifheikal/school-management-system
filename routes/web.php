@@ -4,6 +4,7 @@ use App\Http\Controllers\Classrooms\ClassroomController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Sections\SectionController;
+use App\Http\Controllers\Students\PromotionController;
 use App\Http\Controllers\Students\StudentController;
 use App\Http\Controllers\Teachers\TeacherController;
 use Illuminate\Support\Facades\Route;
@@ -63,15 +64,23 @@ Route::group(
         Route::resource('teachers', TeacherController::class);
 
     /**** ROUTE FOR Students  ****/
+
+    Route::controller(StudentController::class)->group(function () {
+
         Route::resource('Students', StudentController::class);
         Route::post('upload_Attachment', [StudentController::class, 'upload_Attachment'])->name('upload_Attachment');
         Route::get('Download_attachment/{studentname}/{filename}', [StudentController::class, 'Download_attachment'])->name('Download_attachment');
         Route::get('open_attachment/{studentname}/{filename}', [StudentController::class, 'open_attachment'])->name('open_attachment');
         Route::post('Delete_attachment', [StudentController::class, 'Delete_attachment'])->name('Delete_attachment');
-
         // AJAX
         Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
         Route::get('/Get_Sections/{id}', [StudentController::class, 'Get_Sections']);
+    });
+
+    Route::controller(PromotionController::class)->group(function () {
+
+        Route::resource('Promotion', PromotionController::class);
+    });
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

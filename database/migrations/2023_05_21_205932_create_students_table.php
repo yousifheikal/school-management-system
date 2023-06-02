@@ -25,6 +25,7 @@ return new class extends Migration
             $table->foreignId('section_id')->constrained('sections')->cascadeOnDelete();
             $table->foreignId('parent_id')->constrained('my__parents')->cascadeOnDelete();
             $table->string('academic_year');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

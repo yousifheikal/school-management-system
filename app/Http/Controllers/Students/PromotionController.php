@@ -3,16 +3,26 @@
 namespace App\Http\Controllers\Students;
 
 use App\Http\Controllers\Controller;
+use App\Repository\StudentPromotionInterface;
 use Illuminate\Http\Request;
 
 class PromotionController extends Controller
 {
+    protected $promotion;
+
+
+    public function __construct(StudentPromotionInterface $promotion)
+    {
+        $this->promotion = $promotion;
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
         //
+        return $this->promotion->index();
     }
 
     /**
@@ -21,6 +31,7 @@ class PromotionController extends Controller
     public function create()
     {
         //
+        return $this->promotion->create();
     }
 
     /**
@@ -29,6 +40,7 @@ class PromotionController extends Controller
     public function store(Request $request)
     {
         //
+        return $this->promotion->store($request);
     }
 
     /**
@@ -58,8 +70,9 @@ class PromotionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Request $request, $id)
     {
         //
+        return $this->promotion->destroy($request, $id);
     }
 }

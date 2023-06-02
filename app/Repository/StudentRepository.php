@@ -203,17 +203,15 @@ class StudentRepository implements StudentRepositoryInterface
         return redirect()->back();
     }
 
+    public function Get_classrooms($id)
+    {
+        $classes = Classroom::where('level_id', $id)->pluck('classroom', 'id');
+        return json_encode($classes);
+    }
 
     public function Get_Sections($id)
     {
         $classes = Section::where('Class_id', $id)->pluck('Name_Section', 'id');
-        return json_encode($classes);
-    }
-
-
-    public function Get_classrooms($id)
-    {
-        $classes = Classroom::where('level_id', $id)->pluck('classroom', 'id');
         return json_encode($classes);
     }
 

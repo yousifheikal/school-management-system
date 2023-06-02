@@ -43,5 +43,6 @@ return [
     'logout' => 'Logout',
     'list_students'=>'list Students',
     'Students_Promotions'=>'Students Promotions',
+    'Management_Students_Promotions' => 'Management Students Promotions',
 
 ];
