@@ -50,6 +50,7 @@ class Student extends Model
         return $this->belongsTo(Section::class, 'section_id');
     }
 
+
     public function parent()
     {
         return $this->belongsTo(My_Parent::class, 'parent_id');

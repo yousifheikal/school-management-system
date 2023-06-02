@@ -33,4 +33,7 @@ return [
     'delete' => 'Delete',
     'old_level' => 'Old Level Academic',
     'New_level' => 'New Level Academic',
+    'add_Graduate' => 'Add Student Graduate',
+    'list_Graduate' => 'List Graduate',
+
 ];

@@ -9,6 +9,7 @@ return [
     'unique' => 'Name of level already exist',
     'delete-error' => 'Sorry this level tie another Data',
     'delete_selected' => "Delete all classes selected",
+    'restore' => 'Restore Data',
 
 
 ];

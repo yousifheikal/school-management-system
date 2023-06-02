@@ -4,6 +4,7 @@ use App\Http\Controllers\Classrooms\ClassroomController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Sections\SectionController;
+use App\Http\Controllers\Students\GraduateController;
 use App\Http\Controllers\Students\PromotionController;
 use App\Http\Controllers\Students\StudentController;
 use App\Http\Controllers\Teachers\TeacherController;
@@ -80,6 +81,15 @@ Route::group(
     Route::controller(PromotionController::class)->group(function () {
 
         Route::resource('Promotion', PromotionController::class);
+    });
+
+    Route::controller(GraduateController::class)->group(function () {
+        Route::get('AddGraduate', [GraduateController::class, 'AddGraduate'])->name('AddGraduate');
+        Route::post('graduated', [GraduateController::class, 'graduated'])->name('graduated');
+        Route::get('showGraduated', [GraduateController::class, 'showGraduated'])->name('showGraduated');
+        Route::post('restore', [GraduateController::class, 'restore'])->name('restore');
+        Route::post('forceDelete', [GraduateController::class, 'forceDelete'])->name('forceDelete');
+
     });
 
     Route::middleware('auth')->group(function () {

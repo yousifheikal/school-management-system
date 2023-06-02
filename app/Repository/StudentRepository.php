@@ -147,7 +147,7 @@ class StudentRepository implements StudentRepositoryInterface
 
     public function destroy($request)
     {
-        Student::where('id', $request->id)->delete();
+        Student::withTrashed()->where('id', $request->id)->forceDelete();
         toastr()->error(trans('message.delete'));
         return redirect()->back();
     }

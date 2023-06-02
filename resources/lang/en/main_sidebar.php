@@ -27,7 +27,7 @@ return [
     'add_student'=>'Add student',
     'information_student'=>'Information Students',
     'Students_upgrade'=>'Students Upgrade',
-    'Graduate_students'=>'Graduate Students',
+    'Graduate_students'=>'graduate Students',
     'Parents'=>'Parents',
     'Add_Parent'=>'Add Parent',
     'Accounts'=>'Accounts',
@@ -44,5 +44,8 @@ return [
     'list_students'=>'list Students',
     'Students_Promotions'=>'Students Promotions',
     'Management_Students_Promotions' => 'Management Students Promotions',
+    'Students_Graduate'=>'Add Students graduate',
+    'Show_Students_Graduate'=>'Show Students graduate',
+
 
 ];

@@ -48,7 +48,7 @@ return [
     'list_Graduate'=>'قائمة التخرجات',
     'Name_Programer' => 'يوسف هيكل',
     'Management_Students_Promotions' => 'ادارة ترقية الطلاب',
-
-
+    'Students_Graduate'=>'اضافة خريج ',
+    'Show_Students_Graduate'=>'عرض الطلاب المتخرجين',
 
 ];
