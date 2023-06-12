@@ -50,6 +50,11 @@ class Student extends Model
         return $this->belongsTo(Section::class, 'section_id');
     }
 
+    // علاقة بين جدول الطلاب وجدول الحضور والغياب
+    public function attendance()
+    {
+        return $this->hasMany('App\Models\Attendance', 'student_id');
+    }
 
     public function parent()
     {

@@ -2,6 +2,7 @@
 
 return [
 
+    'First_section' => 'A',
     'title_page' => 'Sections',
     'section' => 'List of Sections',
     'List_Grade' => 'List_Grade',

@@ -46,6 +46,12 @@ return [
     'Management_Students_Promotions' => 'Management Students Promotions',
     'Students_Graduate'=>'Add Students graduate',
     'Show_Students_Graduate'=>'Show Students graduate',
-
+    'fees' => 'Fees',
+    'add_fees' => 'Add Fees',
+    'year' => 'Year',
+    'Subjects' => 'Subjects',
+    'Type_Fees' => 'Fees Type',
+    'Feed_School' => 'Feed School',
+    'Feed_Bus' => 'Feed Bus',
 
 ];

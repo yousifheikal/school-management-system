@@ -50,5 +50,13 @@ return [
     'Management_Students_Promotions' => 'ادارة ترقية الطلاب',
     'Students_Graduate'=>'اضافة خريج ',
     'Show_Students_Graduate'=>'عرض الطلاب المتخرجين',
+    //Fees
+    'fees' => 'الرسوم الدراسية',
+    'add_fees' => 'اضافة رسوم جديدة',
+    'year' => 'السنة الدراسية',
+    'Subjects' => 'المواد الدراسية',
+    'Type_Fees' => 'نوع الرسوم',
+    'Feed_School' => 'رسوم دراسية',
+    'Feed_Bus' => 'رسوم باص',
 
 ];

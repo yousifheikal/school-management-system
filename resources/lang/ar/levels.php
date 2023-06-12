@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'first_level' => 'المرحلة الابتدائية',
+    'level' => 'المرحلة الدراسية',
     'add_Grade' => 'اضافة مرحلة',
     'edit_Grade'=> 'تعديل مرحلة',
     'delete_Grade'=> 'حذف مرحلة',

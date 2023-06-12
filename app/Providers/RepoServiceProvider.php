@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Repository\FeesInterface;
 use Illuminate\Support\ServiceProvider;
 
 class RepoServiceProvider extends ServiceProvider
@@ -30,6 +31,21 @@ class RepoServiceProvider extends ServiceProvider
         $this->app->bind(
             'App\Repository\StudentGraduateInterface',
             'App\Repository\StudentGraduate'
+        );
+
+        $this->app->bind(
+            'App\Repository\FeesInterface',
+            'App\Repository\Fees'
+        );
+
+        $this->app->bind(
+            'App\Repository\FeeInvoicesInterface',
+            'App\Repository\FeeInvoices'
+        );
+
+        $this->app->bind(
+            'App\Repository\AttendanceStudent',
+            'App\Repository\Attendance'
         );
     }
 

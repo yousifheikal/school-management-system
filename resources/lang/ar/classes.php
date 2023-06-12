@@ -1,6 +1,8 @@
 <?php
 
 return [
+
+    'class_level' => 'الصف الاول',
     'Classroom' => 'اسماء الفصول الدراسية',
     'title_page' => 'الصفوف الدراسية',
     'List_classes' => 'قائمة الصفوف الدراسية',

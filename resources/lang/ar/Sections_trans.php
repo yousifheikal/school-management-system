@@ -2,7 +2,7 @@
 
 return [
 
-
+    'First_section' => 'أ',
     'title_page' => 'الاقسام',
     'section' => 'الاقسام المدرسية',
     'List_Grade' => 'List_Grade',

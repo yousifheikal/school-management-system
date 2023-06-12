@@ -20,6 +20,7 @@
         <div class="col-md-12 mb-30">
             <div class="card card-statistics h-100">
                 <div class="card-body">
+                    <h6 style="color: red;font-family: Cairo">{{trans('Students_trans.add_Graduate')}}</h6><br>
 
                     @if (Session::has('error_Graduated'))
                         <div class="alert alert-danger alert-dismissible fade show" role="alert">

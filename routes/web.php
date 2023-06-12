@@ -1,9 +1,12 @@
 <?php
 
 use App\Http\Controllers\Classrooms\ClassroomController;
+use App\Http\Controllers\Fees\FeeController;
+use App\Http\Controllers\Fees\FeesInvoicesController;
 use App\Http\Controllers\Levels\LevelController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Sections\SectionController;
+use App\Http\Controllers\Students\AttendanceController;
 use App\Http\Controllers\Students\GraduateController;
 use App\Http\Controllers\Students\PromotionController;
 use App\Http\Controllers\Students\StudentController;
@@ -27,7 +30,7 @@ Route::group(['middleware' => ['guest']], function (){
 
     /**** ROUTE FOR LOGIN ****/
     Route::get('/', function () {
-        return view('welcome');
+        return view('auth.login');
     });
 });
 
@@ -76,6 +79,8 @@ Route::group(
         // AJAX
         Route::get('/Get_classrooms/{id}', [StudentController::class, 'Get_classrooms']);
         Route::get('/Get_Sections/{id}', [StudentController::class, 'Get_Sections']);
+
+        Route::resource('Attendance', AttendanceController::class);
     });
 
     Route::controller(PromotionController::class)->group(function () {
@@ -91,6 +96,16 @@ Route::group(
         Route::post('forceDelete', [GraduateController::class, 'forceDelete'])->name('forceDelete');
 
     });
+
+    Route::controller(FeeController::class)->group(function () {
+        Route::resource('Fees', FeeController::class);
+    });
+
+    Route::controller(FeesInvoicesController::class)->group(function () {
+        Route::resource('Fees_Invoices', FeesInvoicesController::class);
+    });
+
+
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

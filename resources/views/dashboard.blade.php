@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="HTML5 Template" />
+    @section('title')
+        {{trans('main_sidebar.Dashboard')}}
+    @stop
     <meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
     <meta name="author" content="potenzaglobalsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -56,7 +59,7 @@ preloader -->
                                     </span>
                             </div>
                             <div class="float-right text-right">
-                                <p class="card-text text-dark">Visitors</p>
+                                <p class="card-text text-dark">Students</p>
                                 <h4>65,650</h4>
                             </div>
                         </div>
@@ -73,11 +76,11 @@ preloader -->
                         <div class="clearfix">
                             <div class="float-left">
                                     <span class="text-warning">
-                                        <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                                        <i class="fa fa-bar-chart-o highlight-icon" aria-hidden="true"></i>
                                     </span>
                             </div>
                             <div class="float-right text-right">
-                                <p class="card-text text-dark">Orders</p>
+                                <p class="card-text text-dark">Teachers</p>
                                 <h4>656</h4>
                             </div>
                         </div>
@@ -143,7 +146,7 @@ preloader -->
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Market summary</h5>
+                        <h5 class="card-title">School summary</h5>
                         <h4>$50,500 </h4>
                         <div class="row mt-20">
                             <div class="col-4">

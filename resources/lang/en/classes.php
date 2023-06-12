@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'class_level' => 'First Class',
     'title_page' => 'Classes',
     'List_classes' => 'List Classes',
     'add_class' => 'add class',

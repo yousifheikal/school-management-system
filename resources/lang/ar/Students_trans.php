@@ -35,6 +35,11 @@ return [
     'New_level' => 'المرحلة الدراسية الجديدة',
     'add_Graduate' => 'اضافة خريج',
     'list_Graduate' => 'عرض قائمة المتخرجين',
+    'promotion' => "ترقية الطلاب",
+    'the_amount' => 'المبلغ',
+    'process' => 'العمليات',
+
+
 
 
 

@@ -2,6 +2,8 @@
 
 return [
 
+    'first_level' => 'First Level',
+    'level' => 'Levels',
     'add_Grade' => 'Add Levels',
     'edit_Grade'=> 'Edit-Level',
     'delete_Grade'=> 'Delete-Level',
