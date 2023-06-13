@@ -10,6 +10,7 @@ use App\Http\Controllers\Students\AttendanceController;
 use App\Http\Controllers\Students\GraduateController;
 use App\Http\Controllers\Students\PromotionController;
 use App\Http\Controllers\Students\StudentController;
+use App\Http\Controllers\Subjects\SubjectController;
 use App\Http\Controllers\Teachers\TeacherController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -103,6 +104,10 @@ Route::group(
 
     Route::controller(FeesInvoicesController::class)->group(function () {
         Route::resource('Fees_Invoices', FeesInvoicesController::class);
+    });
+
+    Route::controller(SubjectController::class)->group(function () {
+        Route::resource('subjects', SubjectController::class);
     });
 
 

@@ -141,7 +141,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="Subjects" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="">قائمة المواد</a> </li>
+                            <li> <a href="{{route('subjects.index')}}">قائمة المواد</a> </li>
                         </ul>
                     </li>
 
