@@ -9,58 +9,128 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h1 align="center" id="title">School Management System</h1>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<p align="center"><img src="https://smartstudent.app/media/2022/09/managment-software.png" alt="project-image"  width="700"></p>
 
-## Learning Laravel
+<h2>Introduction:</h2>
+<p id="description"> it is a system multi language (Arabic -English)
+Admin create, read, update, and delete (CRUD) students, teachers, parents courses,and classes. Teachers login with their credentials and view their assigned courses
+and classes. Students login with their credentials and view their assigned courses and classes. Parent login with their credentials and view all info for student
+Admin assign teachers to courses and classes. Admin assign students to classes and courses.
+</p>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h2>Project Screenshots:</h2>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<img src="https://github.com/HatemSamy/School_management_system/assets/126292572/8ed2bf85-2a57-47ab-93d6-07264a9bb737" alt="project-screenshot" width="200" height="150/">
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<img src="https://github.com/HatemSamy/School_management_system/assets/126292572/0bd3a042-6749-4220-af8f-f7c3a05c288d" alt="project-screenshot" width="200" height="150/">
 
-## Laravel Sponsors
+<img src="https://github.com/HatemSamy/School_management_system/assets/126292572/2489f018-55a6-428d-a55f-23c42e6ac77a" alt="project-screenshot" width="200" height="150/">
+<img src="https://github.com/HatemSamy/School_management_system/assets/126292572/1b52580e-12a4-4b87-a059-e5deb424cd5b" alt="project-screenshot" width="200" height="150/">
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+<h2>🧐 Features</h2>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Here're some of the project's best features:
 
-## Security Vulnerabilities
+*   Authentication: Registration and login functionality for administrators teachers and students to ensure secure access to the system.
+*   Admins: Management of administrative users with privileged access allowing them to perform administrative tasks and configure the system.
+*   Teachers: Management of teacher profiles contact details qualifications and assigned subjects.
+*   Students: Management of student profiles contact details enrollment status class assignments and academic records
+*   Academic Term: Management of academic terms within each academic year with corresponding start and end dates for effective scheduling and tracking of courses and student progress.
+*   Class Levels: Management of different class levels or grades within the school for effective student organization.
+*   Exams: Creation scheduling and management of exams including defining details such as date time and duration
+*   Program: Management of academic programs or courses offered by the school including curriculum and requirements.
+*   Subject: Management of subjects taught in the school including assignment to programs and class levels.
+*   Graduation Years: Grouping of students based on their respective graduation years to track progress and manage student cohorts.
+*   Results: Recording and storage of student exam results generating reports for tracking performance.
+*   Questions: Creation and management of a categorized database of questions for exams and practice tests.
+*   Academic Year: Definition and management of academic years organizing the school's academic calendar.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+<h2>💻 Built with</h2>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Technologies and tools used in the project:
+
+*   Node.js
+*   express
+*   MongoDB
+*   mongoose
+*   jsonwebtoken
+*   joi
+*   bcrypt.js
+*   express-async-handler
+*   dotenv
+*   nodemailer
+*   multer
+*   cloudinary
+
+
+
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. express</p>
+
+```
+npm install express
+```
+
+<p>2. mongoose</p>
+
+```
+npm install mongoose
+```
+
+<p>3. bcryptjs</p>
+
+```
+npm install bcryptjs
+```
+
+<p>4. jsonwebtoken</p>
+
+```
+npm install jsonwebtoken
+```
+
+<p>5. joi</p>
+
+```
+npm install joi
+```
+
+<p>6. cloudinary</p>
+
+```
+npm install cloudinary
+```
+
+<p>7. express-async-handler</p>
+
+```
+npm install express-async-handler
+```
+
+<p>8. morgan</p>
+
+```
+npm install morgan
+```
+
+<p>9. nodemailer</p>
+
+```
+npm install nodemailer
+```
+
+<p>10. multer</p>
+
+```
+npm install multer
