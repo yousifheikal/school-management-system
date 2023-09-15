@@ -29,14 +29,21 @@ SMSs can be used to automate many of the tasks that are typically performed manu
 
 A school management system (SMS) can have a wide range of features, depending on the specific needs of the school. However, some of the most common features include:
 
-Student information management: This includes features for managing student personal information, contact information, academic records, and other relevant data.
-Attendance tracking: This includes features for tracking student attendance, generating attendance reports, and sending alerts to parents and guardians when students are absent.
-Gradebook management: This includes features for managing student grades, generating grade reports, and tracking student progress.
-Assessment management: This includes features for creating and administering assessments, grading assessments, and generating reports on student performance.
-Curriculum management: This includes features for creating and managing curriculum materials, tracking student progress through the curriculum, and generating reports on student achievement.
-Scheduling: This includes features for creating and managing school schedules, tracking teacher availability, and generating reports on class attendance and performance.
-Fee management: This includes features for collecting and managing student fees, generating fee reports, and sending reminders to parents and guardians about upcoming fees.
-Communication: This includes features for sending and receiving messages between school staff, students, and parents, as well as features for creating and managing school calendars and announcements.
+* Student information management: This includes features for managing student personal information, contact information, academic records, and other relevant data.
+
+* Attendance tracking: This includes features for tracking student attendance, generating attendance reports, and sending alerts to parents and guardians when students are absent.
+
+* Gradebook management: This includes features for managing student grades, generating grade reports, and tracking student progress.
+
+* Assessment management: This includes features for creating and administering assessments, grading assessments, and generating reports on student performance.
+
+* Curriculum management: This includes features for creating and managing curriculum materials, tracking student progress through the curriculum, and generating reports on student achievement.
+
+* Scheduling: This includes features for creating and managing school schedules, tracking teacher availability, and generating reports on class attendance and performance.
+
+* Fee management: This includes features for collecting and managing student fees, generating fee reports, and sending reminders to parents and guardians about upcoming fees.
+
+* Communication: This includes features for sending and receiving messages between school staff, students, and parents, as well as features for creating and managing school calendars and announcements.
 
 <h2> Documentation</h2>
 [Postman doucments link](https://documenter.getpostman.com/view/27663911/2s9YC4Tsi5)
