@@ -1,6 +1,6 @@
 <h1 align="center" id="title">school management system</span></h1>
 
-<p align="center"><img src="https://sevenblock.net/assets/images/projects/Smart%20Shop.png" alt="project-image" width="600"></p>
+<p align="center"><img src="https://codecreator.org/projects/wp-content/uploads/sites/3/2015/10/school-management-system-project.jpg" alt="project-image" width="600"></p>
 
 <h2>Introduction:</h2>
 <p id="description">A school management system (SMS) is a software application that helps schools to manage their day-to-day operations. SMSs typically include features for student registration, attendance tracking, academic record management, fee payment, and communication with parents.
