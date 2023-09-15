@@ -91,7 +91,7 @@ php artisan make:model example -a
 php artisan migrate
 ```
 
-<p>7. connection with local server</p>
+<p>6. connection with local server</p>
 
 ```
 php artisan ser
