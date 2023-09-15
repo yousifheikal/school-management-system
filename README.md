@@ -63,7 +63,7 @@ Technologies and tools used in the project:
 <p>1. Installation laravel project</p>
 
 ```
-composer create-project laravel/laravel smart-shop-api
+composer create-project laravel/laravel school-management-system
 ```
 
 <p>2. Laravel Breeze Auth</p>
