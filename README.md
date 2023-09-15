@@ -70,6 +70,7 @@ composer create-project laravel/laravel school-management-system
 
 ```
 composer require laravel/breeze --dev```
+```
 
 <p>3. Connection Database</p>
 
@@ -84,7 +85,7 @@ php artisan make:model example -a
 ```
 
 
-<p>6. connection DB</p>
+<p>5. connection DB</p>
 
 ```
 php artisan migrate
