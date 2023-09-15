@@ -45,9 +45,6 @@ A school management system (SMS) can have a wide range of features, depending on
 
 * Communication: This includes features for sending and receiving messages between school staff, students, and parents, as well as features for creating and managing school calendars and announcements.
 
-<h2> Documentation</h2>
-[Postman doucments link](https://documenter.getpostman.com/view/27663911/2s9YC4Tsi5)
-
 <h2>💻 Built with</h2>
 
 Technologies and tools used in the project:
