@@ -1,5 +1,4 @@
 <h1 align="center" id="title">school management system</span></h1>
-
 <p align="center"><img src="https://codecreator.org/projects/wp-content/uploads/sites/3/2015/10/school-management-system-project.jpg" alt="project-image" width="600"></p>
 
 <h2>Introduction:</h2>
